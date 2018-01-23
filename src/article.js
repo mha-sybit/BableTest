@@ -1,8 +1,7 @@
 import {Wove} from 'aspect.js';
 const logger = require('./logger.js');
-//import logger form './logger.js'
 
-@Wove
+@Wove({ bar: 42 })
 class ArticleCollection {
   getArticleById(id) {
     return "getArticleById"
@@ -18,4 +17,12 @@ class ArticleCollection {
   }
 }
 
+@Wove()
+class Test {
+  static my_function(argument) {
+    return argument;
+  }
+}
+
 console.log(new ArticleCollection().removeArticleById('sdaf'));
+console.log(Test.my_function('TestTest'));
