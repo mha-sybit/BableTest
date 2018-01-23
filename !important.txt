@@ -1,0 +1,3 @@
+compile everything in a file ./dist/app.bundle.js with command
+
+"webpack" or "webpack -w"
