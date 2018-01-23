@@ -2,14 +2,14 @@ require("@babel/polyfill");
 const $ = require("jquery");
 
 const people = require('./people.js');
-//const proxy = require('./proxy.js');
-// const my_aspect = require('./my_aspect');
-//const logger = require('./logger');
 const article = require('./article.js');
 
-// import 'babel-polyfill';
-// import people from './people.js';
-// import $ from 'jquery';
+// is a single test with a porxy
+//const proxy = require('./proxy.js');
+
+// logger an logging class in one file
+// const my_aspect = require('./my_aspect');
+
 
 $('<h1>People</h1>').appendTo('body');
 
